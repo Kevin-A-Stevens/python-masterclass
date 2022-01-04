@@ -24,4 +24,19 @@ print("C:\\Users\\kstevens\\notes.txt") # preferable
 print(r"C:\Users:\kstevens\notes.txt")
 
 age = 24
-print(age)
+
+# checking variable type
+print(type(age))
+print(type(anotherSplitString))
+
+# concatenate strings and integers
+# str converts age to a string
+print("Your age is " + str(age) + " years old")
+
+# Data types
+# int = have no fractional part. No maximum size
+# float = have a fractional part
+# floats have 52 digit precision
+# If you need more precision, Python 3 has Decimal data type
+
+
