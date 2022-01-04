@@ -14,3 +14,10 @@ name = input("Please enter your name ")
 
 print(greeting + " " + name)
 
+parrot = "Norwegian Blue"
+print(parrot)
+print(parrot[3])
+print()
+print(parrot[-1])   # e = last character
+
+
