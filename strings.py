@@ -42,6 +42,18 @@ letters = "abcdefghijklmnopqrstuvwxyz"
 backwards = letters[::-1]
 print(backwards)
 
+string1 = "he's"
+string2 = "probably"
+string3 = "pining"
+string4 = "for the"
+string5 = "fjords"
+
+print("Hello " * 5)
+
+today = "Friday"
+print("day" in today)   # True
+print("Thur" in today)  # False
+
 
 
 
