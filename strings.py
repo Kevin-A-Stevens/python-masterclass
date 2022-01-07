@@ -54,6 +54,11 @@ today = "Friday"
 print("day" in today)   # True
 print("Thur" in today)  # False
 
+# f string
+age = 52
+print(name + f" is {age} years old")
+
+print(f"pi is approximately {22 / 7:12.50f}")
 
 
 

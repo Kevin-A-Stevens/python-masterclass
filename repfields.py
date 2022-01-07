@@ -27,3 +27,4 @@ print("Pi is approximately {0:52.50f}".format(22 / 7))
 print("Pi is approximately {0:62.50f}".format(22 / 7))
 print("Pi is approximately {0:72.50f}".format(22 / 7))
 print("Pi is approximately {0:<72.50f}".format(22 / 7)) # left align
+
