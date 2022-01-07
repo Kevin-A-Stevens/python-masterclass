@@ -44,7 +44,43 @@ print(abs(-20))
 + and -
 """
 
+# Complex data type
+"""
+Only used for really complex math
+"""
 
+# bin action/functions gives the binary representation
+print(bin(5))  # 0b101  where 101 in binary for 5
 
+# int action/function converts binary to integer. 2 means base 2 (binary)
+print(int("0b101", 2))
 
+# Variables
 
+iq = 190
+print(iq)
+
+"""
+snake_case
+start with a lowercase or _
+letters, numbers, underscores
+case sensitive
+don't over-write keywords
+"""
+
+user_iq = 190
+_user_iq = 190
+user4_iq = 200
+
+# Constants = a variable that will not change
+# All caps tell a programmer that this is a constant and does not change
+PI = 3.14
+
+# dunder variables are meant to be left alone
+# __file__
+
+# A quick way to assign variables
+a,b,c = 1,2,3
+print(a)
+print(b)
+print(c)
