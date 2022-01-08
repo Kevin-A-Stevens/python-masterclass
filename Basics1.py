@@ -84,3 +84,31 @@ a,b,c = 1,2,3
 print(a)
 print(b)
 print(c)
+
+# Augmented assignment operator
+some_value = 5
+some_value += 2
+print(some_value)
+
+# str
+print(type("Hey there!")) # <class 'str'>
+long_string = '''
+WOW
+0 0
+---
+'''
+print(long_string)
+first_name = "Kevin"
+last_name = "stevens"
+full_name = first_name + " " + last_name
+print(full_name)
+
+# string concatenation
+print("Hello" + " Kevin")
+
+# Type Conversion = converting the type of your Data Type
+print(type(str(100))) # <class 'str'>
+print(type(int(str(100)))) # <class 'int'>
+
+
+
