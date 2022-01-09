@@ -34,5 +34,75 @@ matrix = [
 
 print(matrix[0][1])  # 2
 
+# List Methods
+basket = [1,2,3,4,5]
+basket.append(100)  # Add an item to the end
+print(basket)
+
+basket.insert(4, 101)  # Insert into a list at a certain index
+print(basket)
+
+basket.extend([102, 103]) # Extends a list
+print(basket)
+
+basket.pop()  # Removes last item in a list and returns that value
+print(basket)
+
+basket.pop(0) # removes an item at that index
+print(basket)
+
+basket.remove(4)  # Removes a certain value
+print(basket)
+
+basket.clear() # Clears what is in the list
+print(basket)
+
+basket = [6,8,7,9,10]
+print(basket)
+print(basket.index(7)) # Get index number of a value
+print(basket.index(8, 0, 3)) # start and stop search at specific index numbers
+print(9 in basket) # True of False if an item is in a list or not
+print(basket.count(10))  # Prints how many times the item occurs
+basket.sort() # sorts items in a list
+print(basket)
+print(sorted(basket))  # sorts and produces a new copy and sorts it
+another_basket = basket.copy() # Copies the list
+print(another_basket)
+basket.reverse()
+print(basket) # Reverses the list in place
+# To sort a list in reverse order
+basket = [8,5,2,9,1]
+print(basket)
+basket.sort()
+basket.reverse()
+print(basket)
+
+# Common List Patterns
+my_basket = ["socks", "shirts", "pants", "shorts", "gloves", "books"]
+print(my_basket)
+print(my_basket[::-1]) # Another way to reverse a list. Creates a new list
+
+print(list(range(1,30))) # Create a range of items in a list
+
+new_sentence = " ".join(["Hi", "my", "name", "is", "Kevin"])
+print(new_sentence)
+
+# List Unpacking
+a,b,c, *other, d = [1,2,3, 4, 5, 6, 7, 8, 9]
+print(a, b, c)
+print(other)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
