@@ -110,5 +110,63 @@ print("Hello" + " Kevin")
 print(type(str(100))) # <class 'str'>
 print(type(int(str(100)))) # <class 'int'>
 
+# Escape Sequence
+weather = "\tIt's \"kind of\" Sunny \n Hope you have a great day"
+print(weather)
+
+# Formatted Strings
+age = 44
+name = 'Johnny'
+print(f"Hi {name}, you are {age} years old")
+print("Hi {0}, you are {1} years old".format(name, age))
+
+# String Indexes [start:stop:step]
+self = "01234567"
+print(self[0])  # 0
+print(self[0:2]) # 01
+print(self[0:8])
+print(self[0:8:2])
+print(self[0:])
+print(self[:5])
+print(self[-1])
+print(self[::-1])   # Reverse a string
+
+# Immutability
+# Cannot change part of a string.
+# self[0] = 8
+# Strings are immutable. Have to change the whole string or create a new variable
+
+# Built-in Functions and Methods
+# len()
+
+print(len("Hello"))  # prints length of a string
+greet = "Hello"
+print(greet[0:len(greet)])
+
+# String Methods
+quote = "to be or not to be"
+print(quote.upper())
+print(quote.capitalize())
+print(quote.lower())
+print(quote.find("be"))
+print(quote.replace("be", "me"))
+print(quote)
+
+# Booleans = True or False
+my_name = "Kevin"
+is_cool = True
+print(type(is_cool))  # <class 'bool'>
+
+current_year = 2022
+birth_year = input("What year were you born? ")
+age = current_year - int(birth_year)
+print(f"Your age is: {age}")
+
+
+
+
+
+
+
 
 
