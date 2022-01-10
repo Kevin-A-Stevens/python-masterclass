@@ -180,6 +180,70 @@ print(my_tuple.count(5)) # get number of times a value appears in the tuple
 print(my_tuple.index(3)) # get an index of the mentioned value
 print(len(my_tuple)) # get the length of a tuple
 
+# Sets = Unordered collections of 'unique' objects
+my_set = {1,2,3,4,5}
+my_set.add(100)
+my_set.add(2)
+print(my_set) # note the 2 was not added because there was already a 2 in the set
+
+# return a collection with unique items
+my_list = [1,2,3,4,4,5,5]
+print(set(my_list))
+print(1 in my_set)  # check if an item is in a set
+my_set.clear() # Clears all items from a set
+print(my_set)
+
+my_set = {1,2,3,4,5}
+your_set = {4,5,6,7,8,9, 10}
+
+"""
+.difference()
+.discard()
+.difference_update()
+.intersection()
+.isdisjoint()
+.issubset()
+.issuperset()
+.union()
+"""
+
+print(my_set.difference(your_set))  # {1, 2, 3}
+my_set.discard(5) # delete an item in a set
+print(my_set)
+my_set.difference_update(your_set) # remove the differences from my_set
+print(my_set)
+
+my_set = {1,2,3,4,5}
+your_set = {4,5,6,7,8,9, 10}
+print(my_set.intersection(your_set))  # {4,5}
+
+my_set = {1,2,3,4,5}
+your_set = {4,5,6,7,8,9, 10}
+print(my_set.isdisjoint(your_set)) # Is there something in common
+
+print(my_set.union(your_set)) # Unites the sets together and removing any duplicate
+# print(my_set | your_set) also works as well
+
+my_set = {4,5}
+your_set = {4,5,6,7,8,9, 10}
+print(my_set.issubset(your_set))  # True {4,5} is inside of the other set
+print(your_set.issuperset(my_set)) # True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
