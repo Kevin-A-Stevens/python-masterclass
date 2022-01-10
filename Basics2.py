@@ -92,6 +92,78 @@ a,b,c, *other, d = [1,2,3, 4, 5, 6, 7, 8, 9]
 print(a, b, c)
 print(other)
 
+# Dictionary = Unordered key-value pairs
+# Unordered = stored in different parts of memory
+dictionary = {
+    "a": [1,2,3],
+    "b": "Hello",
+    "c": True
+}
+
+print(dictionary["b"]) # Get value of that key
+print(dictionary)
+
+my_list = [
+    {
+    "a": [1,2,3],
+    "b": "Hello",
+    "c": True
+    },
+    {
+    "a": [4, 5, 6],
+    "b": "Hello",
+    "c": True
+    }
+]
+
+print(my_list[0]["a"][2])
+print(dictionary["a"][1])
+
+user = {
+    "basket": [1,2,3],
+    "greet": "Hello"
+}
+
+# Dictionary Methods
+print(user.get("greet"))  # Get  value of that key
+print(user.get("age", 55))  # Sets a default value if the key does not exist
+
+user2 = {
+    "basket": [1,2,3],
+    "greet": "Hello",
+    "age": 20
+}
+
+print("basket" in user2) # find if a key exists in the dictionary
+print("greet" in user2.keys()) # Check if a key exists
+print(20 in user2.values()) # Check if a values exists
+user2.clear() # clears the dictionary
+print(user2)
+
+user2 = {
+    "basket": [1,2,3],
+    "greet": "Hello",
+    "age": 20
+}
+
+user3 = user2.copy() # copies a dictionary
+print(user2)
+print(user3)
+
+print(user2.pop("age")) # removes a key and its value
+print(user2)
+
+print(user2.popitem()) # randomly removes a key/value
+print(user2)
+
+user2 = {
+    "basket": [1,2,3],
+    "greet": "Hello",
+    "age": 20
+}
+
+user2.update({"age": 55})  # updates a key/value in a dictionary
+print(user2)
 
 
 
