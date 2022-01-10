@@ -122,4 +122,47 @@ for i,char in enumerate(list(range(50))):
     if char == 25:
         print(f"index of 25 is: {i}")
 
+# while loops
+i = 0
+while i < 50:
+    print(i)
+    i += 1
+
+# to jump out of a while loop. condition becomes false or sees a break
+
+# Can also use else with a while loop
+# else only executes if there is no break
+i = 0
+while i < 50:
+    print(i)
+    i += 1
+else:
+    print("Done with all the work")
+
+my_list = [1,2,3,4,5]
+i = 0
+while i < len(my_list):
+    print(my_list[i])
+    i += 1
+
+for item in my_list:
+    print(item)
+
+# while loops are flexible and more powerful. Watch for infinite loops
+# for loops are more simple
+# while loops are great for tasks
+while True:
+    response = input("Say something: ")
+    if (response == "bye"):
+        break
+
+# Can also use continue which will continue back up to the top
+# can also use pass which will pass to the next line
+# pass is a good way to have a placeholder while you are coding
+
+
+
+
+
+
 
