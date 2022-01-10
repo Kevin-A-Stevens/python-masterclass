@@ -165,6 +165,26 @@ user2 = {
 user2.update({"age": 55})  # updates a key/value in a dictionary
 print(user2)
 
+# Tuples = Immutable lists. Usually faster than lists
+# If you don't need your list to change, use a tuple
+# A good use for a tuple is lat/long coordinates
+my_tuple = (1,2,3,4,5)
+print(my_tuple[1])
+print(5 in my_tuple)
+
+x,y,z,*other = (5,6,7,8,9)
+print(x, y, z)
+print(other)
+
+print(my_tuple.count(5)) # get number of times a value appears in the tuple
+print(my_tuple.index(3)) # get an index of the mentioned value
+print(len(my_tuple)) # get the length of a tuple
+
+
+
+
+
+
 
 
 
