@@ -4,6 +4,7 @@
 # OOP has classes, functional programming separate data and functions
 
 from functools import reduce
+from time import time
 
 ## Pure functions
 # 2 rules
@@ -104,4 +105,61 @@ print(my_dict)
 some_list = ["a", "b", "c", "b", "d", "n", "m", "n"]
 duplicates = {x for x in some_list if some_list.count(x) > 1}
 print(duplicates)
+
+# Decorators - supercharge our functions
+
+def my_decorator(func): # accepting a function
+    def wrap_func(): # wrapping a function
+        print("********")
+        func() # calling a function
+        print("********")
+    return wrap_func # returning a wrapper function
+
+@my_decorator
+def hello():
+    print("Hello")
+
+@my_decorator
+def bye():
+    print("See ya later")
+
+hello()
+bye()
+
+def my_decorator2(func2): # accepting a function
+    def wrap_func(*args, **kwargs): # wrapping a function
+        print("********")
+        func2(*args, **kwargs) # calling a function
+        print("********")
+    return wrap_func # returning a wrapper function
+
+@my_decorator2
+def hello2(greeting, emoji=":)"):
+    print(greeting, emoji)
+
+hello2("Hi")
+
+# Measure time it takes to run a function
+
+def performance(fn):
+    def wrapper(*args, **kwargs):
+        t1 = time()
+        result = fn(*args, **kwargs)
+        t2 = time()
+        print(f"took {t2 - t1} ms")
+        return result
+    return wrapper
+
+@performance
+def long_time():
+    for i in range(10000000):
+        i*5
+
+long_time()
+
+
+
+
+
+
 
