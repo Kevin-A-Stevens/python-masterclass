@@ -41,6 +41,62 @@ print(my_list)
 # second = sys.argv[2]
 # print(f"Hello {first} {last}")
 
+# Useful Modules
+
+# Counter keeps track of how many times and item occurred. Creates a dictionary.
+from collections import Counter, defaultdict, OrderedDict
+
+li = [1,2,3,4,5,6,7,7]  # Counter({7: 2, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1})
+print(Counter(li))
+sentence = "blah blah blah thinking about python"
+print(Counter(sentence))
+
+# defaultdict allows you to search a key and get 0 if it doesn't exist
+dictionary = defaultdict(int, {"a": 1, "b": 2})
+print(dictionary["c"])
+
+d = OrderedDict()
+d["A"] = 1
+d["B"] = 2
+
+d2 = OrderedDict()
+d2["A"] = 1
+d2["B"] = 2
+
+print(d2 == d)
+
+d3 = OrderedDict() # looks at order of items
+d3["A"] = 2
+d3["B"] = 1
+
+print(d2 == d3)
+
+"""
+Recently, the Python has made Dictionaries ordered by default! 
+So unless you need to maintain older version of Python 
+(older than 3.7), you no longer need to use ordered dict, 
+you can just use regular dictionaries!
+"""
+
+# Datetime module
+
+import datetime
+
+print(datetime.time())  # 00:00:00
+print(datetime.time(5,45,2))  # 05:45:02
+print(datetime.date.today())  # 2022-01-31
+
+# array package and array module
+from array import array
+
+arr = array("i", [1,2,3]) # "i" = integer
+print(arr[0])  # Can access it like a list and has better performance
+
+
+
+
+
+
 
 
 

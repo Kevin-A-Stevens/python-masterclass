@@ -23,7 +23,6 @@ while True:
         print("Please enter a number")
         continue
 
-
 # check if number is the right guess or ask again
 
 
