@@ -2,6 +2,7 @@
 
 import re
 
+# https://emailregex.com/
 email_pattern = re.compile(r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)")
 pattern = re.compile("this")
 string = "Search this inside of this text please!"
